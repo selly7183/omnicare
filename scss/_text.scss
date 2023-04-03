@@ -1,0 +1,153 @@
+// @import "reset";
+// @import "variables";
+
+@mixin fontStyle(
+  $font-size,
+  $line-height,
+  $font-weight: $weight-500,
+  $letter-spacing: null,
+  $font-name: null
+) {
+  font: {
+    size: $font-size;
+    weight: $font-weight;
+    family: $font-name;
+  }
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
+}
+
+/* Montserrat*/
+@mixin eDisplay {
+  @include fontStyle($fs-large-1, 1.146, $weight-700, -1px, $e-font-family);
+}
+@mixin eDisplay2 {
+  @include fontStyle($fs-medium-1, 1.45, $weight-700, -1px, $e-font-family);
+}
+@mixin eDisplayMo {
+  @include fontStyle(
+    $fs-large-4,
+    $lh-medium-4,
+    $weight-700,
+    $ls-medium,
+    $e-font-family
+  );
+}
+@mixin eDisplayTab {
+  @include fontStyle(
+    $fs-large-5,
+    $lh-large-4,
+    $weight-700,
+    $ls-large,
+    $e-font-family
+  );
+}
+@mixin eTit {
+  @include fontStyle($fs-large-3, 1.33, $weight-700, -1px, $e-font-family);
+}
+@mixin eTit2 {
+  @include fontStyle($fs-medium-1, 1.45, $weight-700, -1px, $e-font-family);
+}
+@mixin eTitTab {
+  @include fontStyle($fs-medium-2, 1.25, $weight-700, -1px, $e-font-family);
+}
+@mixin eTitMo {
+  @include fontStyle($fs-medium-1, 1.45, $weight-700, -1px, $e-font-family);
+}
+@mixin eContact {
+  @include fontStyle(
+    $fs-medium-3,
+    1.5,
+    $weight-700,
+    $ls-normal,
+    $e-font-family
+  );
+}
+
+/* NotoSansKR */
+@mixin txtDisplay {
+  @include fontStyle($fs-large-1, $lh-large-1, $weight-700, $ls-large);
+}
+@mixin txtDisplay2 {
+  @include fontStyle($fs-large-2, $lh-large-2, $weight-700, $ls-large);
+}
+@mixin txtTit {
+  @include fontStyle($fs-large-3, $lh-large-3, $weight-900);
+}
+@mixin txtTit2 {
+  @include fontStyle($fs-medium-1, $lh-medium-1, $weight-900);
+}
+@mixin txtTitMo {
+  @include fontStyle($fs-medium-4, 1.43, $weight-700);
+}
+@mixin txtSub {
+  @include fontStyle($fs-medium-1, $lh-medium-2, $weight-700);
+}
+@mixin txtSub2 {
+  @include fontStyle($fs-medium-2, $lh-medium-3, $weight-700);
+}
+@mixin txtSubTab {
+  @include fontStyle($fs-medium-2, $lh-medium-3, $weight-500);
+}
+@mixin txtSubMo {
+  @include fontStyle($fs-normal, $lh-small-2, $weight-500);
+}
+@mixin txtBody {
+  @include fontStyle($fs-medium-3, $lh-small-1, $weight-500, $ls-normal);
+}
+@mixin txtBody2 {
+  @include fontStyle($fs-normal, $lh-small-2, $weight-500, $ls-normal);
+}
+@mixin txtBodyMo {
+  @include fontStyle($fs-small-2, 1.75, $weight-400, $ls-normal);
+}
+@mixin txtBtn {
+  @include fontStyle($fs-small-1, $lh-small-3, $weight-700);
+}
+@mixin txtBtnMo {
+  @include fontStyle($fs-small-4, $lh-small-3, $weight-700);
+}
+@mixin txtNav {
+  @include fontStyle($fs-normal, $lh-small-3, $weight-900);
+}
+@mixin txtNav2 {
+  @include fontStyle($fs-small-2, $lh-small-3, $weight-900);
+}
+@mixin txtNormal {
+  @include fontStyle($fs-normal, $lh-normal, $weight-500, $ls-normal);
+}
+@mixin txtNormal2 {
+  @include fontStyle($fs-small-2, $lh-normal, $weight-500, $ls-normal);
+}
+@mixin txtNormalTab {
+  @include fontStyle($fs-small-4, $lh-normal, $weight-400, $ls-normal);
+}
+@mixin txtNormalMo {
+  @include fontStyle($fs-small-3, $lh-small-4, $weight-400, $ls-normal);
+}
+@mixin txtCopy {
+  @include fontStyle($fs-small-3, 1.71, $weight-300, $ls-small);
+}
+@mixin txtCard {
+  @include fontStyle($fs-medium-3, 1.5, $weight-700, $ls-normal);
+}
+@mixin txtContactMo {
+  @include fontStyle($fs-small-3, 1.71, $weight-500, $ls-normal);
+}
+@mixin txtOverlayMo {
+  @include fontStyle($fs-medium-5, 1.2, $weight-500, -1.2px);
+}
+
+@mixin h1 {
+  @include txtDisplay;
+  color: $color-wh100;
+}
+@mixin h2 {
+  @include txtSub;
+}
+@mixin sub-h2 {
+  @include txtTit;
+}
+@mixin h3 {
+  @include txtBody;
+}

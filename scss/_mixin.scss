@@ -1,0 +1,32 @@
+@import "_reset";
+@import "_variables";
+@import "_text";
+
+$labtop-medium: 1440px;
+$labtop-small: 1280px;
+$tablet: 768px;
+$mobile: 390px;
+
+@mixin laptopMedium {
+  @media (max-width: $labtop-medium) {
+    @content;
+  }
+}
+
+@mixin laptopSmall {
+  @media (max-width: $labtop-small) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}

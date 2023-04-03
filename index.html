@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+    <title>OMNICARE</title>
+    <link rel="stylesheet" href="./js/jquery.fullPage.css" />
+    <link rel="stylesheet" href="./js/swiper.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/scrolloverflow.min.js"></script>
+    <script src="./js/jquery.fullPage.js"></script>
+    <script src="./js/jquery.fullpage.extensions.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_cont">
+        <div class="header_box">
+          <a href="/">
+            <img src="img/logo.png" alt="omnicare" />
+          </a>
+          <ul id="navMenu" class="nav-menu">
+            <li data-menuanchor="home" >
+              <a href="#home">Home</a>
+            </li>
+            <li data-menuanchor="about"><a href="#about">About</a></li>
+            <li data-menuanchor="solution"><a href="#solution">Solution</a></li>
+            <li data-menuanchor="services"><a href="#services">Services</a></li>
+            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="mo_menu">
+            <span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+	<div class="m-overlay">
+		<ul id="navMenu" class="nav-menu">
+            <li data-menuanchor="home">
+              <a href="#home">Home</a>
+            </li>
+            <li data-menuanchor="about"><a href="#about">About</a></li>
+            <li data-menuanchor="solution"><a href="#solution">Solution</a></li>
+            <li data-menuanchor="services"><a href="#services">Services</a></li>
+            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+        </ul>
+	</div>
+    <div id="fullpage" class="omnicare">
+	
+      <!-- home -->
+      <div class="section home" data-anchor="home">
+        <div class="overlay"></div>
+        <video id="myVideo" loop muted data-autoplay playsinline >
+          <source src="video/main_movie.mp4" type="video/mp4" />
+        </video>
+        <div class="sec01_cont">
+          <div class="cont_pagew">
+            <h1 class="sec01_tit">OMNICARE</h1>
+            <h2>
+              고객과 함께, 기업의 건강을 위하여,<br class="vis-768" />
+              건강을 잇는 세상을 만들어 나갑니다.
+            </h2>
+            <button class="btn">
+				<a href="#about">시작하기</a>
+			</button>
+          </div>
+        </div>
+        <div
+          class="scroll-prompt"
+          scroll-prompt=""
+          ng-show="showPrompt"
+          style="opacity: 1"
+        >
+		<a href="#about">
+			<div class="scroll-prompt-arrow-container">
+				<div class="scroll-prompt-arrow"><div></div></div>
+				<div class="scroll-prompt-arrow"><div></div></div>
+			  </div>
+			</div>
+		</a>
+          
+      </div>
+      <!-- about -->
+      <div class="section about" data-anchor="about" >
+        <div class="sec02_cont">
+          <div class="sec02_l img-ani left-right">
+            <div class="line"></div>
+            <h2 class="">건강을 잇(IT)는 기업</h2>
+            <h3>
+              기업에서 시행 중인 임직원 및 가족의 건강 검진 복지 사업을 검진
+              컨설팅부터 예약 시스템 제공, 운영 및 관리 지원, 정산과 사후 관리를
+              위탁 받아 Total로 편리하고 안정적으로 진행 할 수 있는 서비스를
+              제공합니다.
+            </h3>
+            <p class="dot">
+              <span>고객중심</span>
+              <span>도전과 변화</span>
+              <span>최고의 전문성</span>
+              <span>신뢰와 책임</span>
+            </p>
+          </div>
+          <div class="sec02_r">
+            <img src="/img/sec02-bg.png" alt="omnicare" />
+          </div>
+        </div>
+      </div>
+      <div class="section about sec03" data-anchor="aboutSub">
+        <div class="sec02_cont">
+          <div class="cont_pagew">
+            <div class="sec02_l img-ani right-left">
+              <div class="line"></div>
+              <h2>
+                종합검진, 특수검진, 출장검진, <br class="vis-768" />
+                채용검진을 동시에
+              </h2>
+              <h3>
+                종합검진, 특수검진, 채용검진 등 검진 대상 유형을 동시에 예약할
+                수 있으며, 담당자는 임직<br class="vis-768" />원의 검진 유형별
+                회사 지원 금액 설정이 가능합니다.
+              </h3>
+              <p class="dot">
+                <span>기업 임직원에게 건강 관리 제공</span>
+                <span>도전과 변화</span>
+                <span>기업 건강검진 위탁운영 서비스 제공</span>
+                <span>고객세상의 모든 건강 기업 복지 서비스 제공중심</span>
+              </p>
+            </div>
+            <div class="sec02_r">
+              <img src="img/sec03-bg.png" alt="omnicare" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- solution -->
+      <div class="section about solution" data-anchor="solution">
+        <div class="sec02_cont">
+          <div class="cont_pagew">
+            <div class="sec02_l">
+              <div class="line"></div>
+              <h2>Solution</h2>
+              <h3>
+                다양해진 임직원의 Needs, 그리고 고령화 시대에 필수적으로 자리
+                잡은 건강관리 점점 복<br class="vis-768" />잡해지고 나날이
+                늘어만 가는 검진 관리 업무에 대한 기업 담당자의 어려움을
+                들었습니다.
+              </h3>
+            </div>
+            <div class="sec02_r">
+              <div class="solution_cont">
+                <div class="solution_box">
+                  <p>우리 기업의 특수성 반영이 어려움</p>
+                  <p class="dot">
+                    <span
+                      >특수검진, 채용검진, 독감 접종 등 다양한 CASE 반영
+                      불가</span
+                    >
+                    <span>우리 회사만의 검진 컨설팅 전문가 부재</span>
+                    <span>비용이 지원되지 않는 가족은 서비스 이용 제한적</span>
+                  </p>
+                </div>
+                <div class="solution_box">
+                  <p>기관과의 소통과 실시간 현황 파악의 어려움</p>
+                  <p class="dot">
+                    <span
+                      >기관을 알아보고 각기 다른 상품을 비교하는 과정의
+                      어려움</span
+                    >
+                    <span
+                      >국가검진 수검 현황, 결과 자료 등 기관별 취합 업무의
+                      어려움</span
+                    >
+                    <span
+                      >실시간 검진 현황과 대상자(입/퇴사자) 업데이트 관리의
+                      어려움</span
+                    >
+                  </p>
+                </div>
+                <div class="solution_box">
+                  <p>우리 기업에 적합한 검진기관 선정의 어려움</p>
+                  <p class="dot">
+                    <span>전문 의료진 상주여부</span>
+                    <span>기관별 시설 및 검진장비 현황과 기관평가자료</span>
+                    <span>비용이 지원되지 않는 가족은 서비스 이용 제한적</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- service-->
+      <div class="section about solution service" data-anchor="services" id="service">
+		<div class="service-overlay"></div>
+        <div class="sec02_cont">
+          <div class="cont_pagew">
+            <div class="sec02_l">
+              <div class="line"></div>
+              <h2>
+                <span class="healthcare">HealthCare</span> Service Platform
+              </h2>
+              <h3>
+                기업에서 시행 중인 임직원 및 가족의 건강검진 복지 사업을 검진
+                컨설팅부터 예약, 운영 및 관리<br class="vis-768" />
+                그리고 정산과 사후관리를 위탁 받아 Total로 서비스하는
+                개념입니다.
+              </h3>
+            </div>
+            <div class="sec02_r sec02_l">
+				<div class="service_cont">
+					<div class="service_wrap">
+						<div class="service_box">
+							<div class="img-box">
+								<img src="img/sec05-01.png" alt="건강검진 컨설팅" />
+							</div>
+						  <div class="service_txt-box img-ani left-right">
+							<h4># 건강검진 컨설팅</h4>
+							<h3>
+							  검진기관 선정부터 항목 검토까지 고객사에 맞춤형 검진
+							  컨설팅 제공
+							</h3>
+							<p class="dot">
+							  <span>검진기관 정보 및 항목 비교 등의 편의성 제공</span>
+							  <span>온라인 검진 예약 페이지 구성</span>
+							</p>
+						  </div>
+						</div>
+						<div class="service_box reverse">
+							<div class="img-box">
+								<img src="img/sec05-02.png" alt="예약시스템" />
+							</div>
+						  <div class="service_txt-box img-ani right-left">
+							<h4># 예약시스템</h4>
+							<h3>
+							  효율성과 편의성을 극대화한 온라인, 모바일 예약 서비스 제공
+							</h3>
+							<p class="dot">
+							  <span>검진기관 정보 및 항목 비교 등의 편의성 제공</span>
+							  <span>온라인 검진 예약 페이지 구성</span>
+							</p>
+						  </div>
+						</div>
+						<div class="service_box">
+							<div class="img-box">
+								<img src="img/sec05-03.png" alt="운영,관리지원" />
+							</div>
+						  <div class="service_txt-box img-ani left-right">
+							<h4># 운영, 관리지원</h4>
+							<h3>
+							  운영 및 관리 지원을 위한 관리자 페이지 제공 및 고객만족팀
+							  운영
+							</h3>
+							<p class="dot">
+							  <span>검진기관 정보 및 항목 비교 등의 편의성 제공</span>
+							  <span>온라인 검진 예약 페이지 구성</span>
+							</p>
+						  </div>
+						</div>
+						<div class="service_box reverse img-ani right-left">
+							<div class="img-box">
+								<img src="img/sec05-04.png" alt="정산,사후관리" />
+							</div>
+						  <div class="service_txt-box">
+							<h4># 정산 및 사후관리</h4>
+							<h3>통합 검진 정산 및 회사 보관용 자료 통합 관리 제공</h3>
+							<p class="dot">
+							  <span
+								>고객사 검진 비용 일괄 통합 정산으로 정산업무 대행</span
+							  >
+							  <span>수검 현황 및 회사 보관용 자료 통합 취합 제공</span>
+							</p>
+						  </div>
+						</div>
+					</div>
+					<div class="swiper-scrollbar"></div>
+				</div>
+				
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section about sec04 service partner" data-anchor="services">
+        <div class="sec02_cont">
+          <div class="cont_pagew">
+            <div class="sec02_l">
+              <div class="line"></div>
+              <h2>Partners</h2>
+              <h3>
+                대기업, 게임사, 스타트업, 공공기관 등 다양한 분야의 500여
+                고객사에 헬스케어 서비스를<br class="vis-768" />
+                성공적으로 제공하고 있습니다.
+              </h3>
+            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/logo/p_l_01.jpg" alt="GC녹십자아이메드" />
+                  <img src="img/logo/p_l_02.jpg" alt="KMI한국의학연구소" />
+                  <img src="img/logo/p_l_03.jpg" alt="가천대길병원" />
+                  <img src="img/logo/p_l_04.jpg" alt="가톨릭대학교" />
+                  <img src="img/logo/p_l_05.jpg" alt="강남세브란스병원" />
+                  <img src="img/logo/p_l_06.jpg" alt="경희대학교병원" />
+                  <img src="img/logo/p_l_07.jpg" alt="강릉아산병원" />
+                  <img src="img/logo/p_l_08.jpg" alt="강북삼성병원" />
+                  <img src="img/logo/p_l_09.jpg" alt="건국대학교병원" />
+                  <img src="img/logo/p_l_10.jpg" alt="계명대학교" />
+                  <img src="img/logo/p_l_11.jpg" alt="고려대학교구로병원" />
+                  <img src="img/logo/p_l_12.jpg" alt="동아대학교병원" />
+                  <img src="img/logo/p_l_13.jpg" alt="강북삼성병원" />
+                  <img src="img/logo/p_l_14.jpg" alt="서울대학교병원강남센터" />
+                  <img src="img/logo/p_l_15.jpg" alt="서울아산병원" />
+                  <img src="img/logo/p_l_16.jpg" alt="순천향대학교서울병원" />
+                  <img src="img/logo/p_l_17.jpg" alt="아주대학교병원" />
+                  <img src="img/logo/p_l_18.jpg" alt="영남대학교병원" />
+                  <img src="img/logo/p_l_19.jpg" alt="이대서울병원" />
+                  <img src="img/logo/p_l_20.jpg" alt="인하대병원" />
+                  <img src="img/logo/p_l_21.jpg" alt="중앙대학교병원" />
+                  <img src="img/logo/p_l_22.jpg" alt="충남대학교병원" />
+                  <img src="img/logo/p_l_23.jpg" alt="한국건강관리협회" />
+                  <img src="img/logo/p_l_24.jpg" alt="한양대학교병원" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section about contact" data-anchor="contact">
+        <div class="sec02_cont">
+          <div class="cont_pagew">
+            <div class="sec02_l">
+              <div class="line"></div>
+              <h2>Contact</h2>
+              <div class="contact_cont">
+                <div class="contact_box">
+                  <ul>
+                    <li>
+                      <div class="contact_txt">
+                        <img src="img/bx-map.png" alt="map" />
+                        <h4>Location</h4>
+                      </div>
+                      <p>
+                        (우) 04515 서울특별시 중구 태평로2가 360-1 광학빌딩 14F
+                      </p>
+                    </li>
+                    <span>
+                      <li>
+                        <div class="contact_txt">
+                          <img src="img/bx-phone-call.png" alt="call" />
+                          <h4>Call</h4>
+                        </div>
+                        <p>02 3702 9369 / 오전 08:00 ~ 오후 18:00공휴일 휴무</p>
+                      </li>
+                      <li>
+                        <div class="contact_txt">
+                          <img src="img/bx-envelope.png" alt="envelope" />
+                          <h4>Email</h4>
+                        </div>
+                        <p>icekeki1205@gmail.com</p>
+                      </li>
+                    </span>
+                  </ul>
+                </div>
+              </div>
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.5938517166464!2d126.9743954656481!3d37.56463168199415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f3274520a9%3A0xce6dc8406fa668a6!2z6rSR7ZWZ67mM65Sp!5e0!3m2!1sen!2skr!4v1679538268694!5m2!1sen!2skr"
+                  width="100%"
+                  height="440"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="section fp-auto-height">
+        <div class="cont_pagew">
+          <img src="img/footer-logo.png" alt="omnicare" />
+          <p>&copy; Copyright. All Rights Reserved</p>
+        </div>
+      </footer>
+    </div>
+	
+  </body>
+</html>
